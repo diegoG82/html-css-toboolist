@@ -5,18 +5,28 @@
     box-sizing: border-box;
 }
 
-body{
+main {
     color: lightgray;
 }
 
 /* header */
 
-.logo-text {
-    display: inline-block;
-    line-height: 80px;
-     vertical-align: bottom;  
-     font-size: 3rem; 
+header{
+    height: 100px;
+    background-color: white;
+}
 
+.logo-image {
+  vertical-align: middle;
+  line-height: 100px;
 
 }
+
+.logo-text {
+    display: inline-block;
+    line-height: 100px;
+    vertical-align: middle;  
+    font-size: 3rem; 
+}
+
 
