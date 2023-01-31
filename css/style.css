@@ -36,7 +36,7 @@ header{
 /* main */
 
 main {
-    height: 600px;
+    height: 700px;
     width: 80% ;
     background-color: white;
     margin: 0 auto;
@@ -68,6 +68,95 @@ main {
     padding: 5px;
     border-radius: 5px;
 }
+
+
+.title::before{
+    content: '\25BE';
+    margin-right: 10px;
+    width: 15px;
+    height: 5px;
+}
+
+/* sezione tasks */
+
+.task{
+    padding: 30px 40px;
+    color: rgb(42, 42, 42);
+    }
+
+ .list{
+        font-size: 16px;
+        margin-bottom: 35px;
+        list-style-type: none;
+    }
+
+    .check::before{
+        display: inline-block;
+        content: '\2713';
+        color: green;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        border:1px solid rgb(25, 182, 25);
+    
+        border-radius: 50%;
+        margin-right:10px;
+        text-align: center;
+    }
+
+
+    .cross::before{
+        display: inline-block;
+        content: '\2717';
+        color: red;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        border: 1px solid red;
+        border-radius: 50%;
+        margin-right:10px;
+        text-align: center;
+    }
+
+  
+    .tag{
+        border-radius: 12px;
+        color: white;
+        font-size: 12px;
+        padding: 7px 10px;
+        margin: 5px;
+    }
+    
+    .editorial{
+        background-color: #45ABEA;
+   }
+   
+   .goals{
+       background-color: #9C72E4;
+   }
+   
+   .recruiting{
+       background-color:#65C1AA;
+   }
+   .mobile{
+       background-color: #F29E33;
+   }
+   .website{
+       background-color:#de5fa3;
+   }
+   .sales{
+       background-color: #B0C926;
+   }
+   
+
+
+
+
+    
+
+
+  
+
 
 
 
