@@ -6,7 +6,10 @@
 }
 
 main {
-    color: lightgray;
+  
+    max: width 80%;
+    margin: auto;
+
 }
 
 /* header */
@@ -14,6 +17,7 @@ main {
 header{
     height: 100px;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 .logo-image {
@@ -28,5 +32,44 @@ header{
     vertical-align: middle;  
     font-size: 3rem; 
 }
+
+/* main */
+
+main {
+    height: 600px;
+    width: 80% ;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+/* buttons */
+
+.buttons{
+    border-bottom: 2px solid  #c3cdd2;
+    padding: 10px 50px;
+}
+
+
+
+.add-task{
+    background-color: rgb(41, 108, 232);
+    border-color: rgb(41, 108, 232);
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.add-section{
+    background-color: white;
+    border-color: darkgrey;
+    color: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
 
 
