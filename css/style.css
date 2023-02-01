@@ -1,166 +1,165 @@
-/* reset e font */
+/* RESET parametri */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
 }
 
-main {
-  
-    max-width: 80%;
-    margin: auto;
+/* Parametri gnerali */
 
-}
+/* BODY inserito colore dello sfondo e font */
 
-/* header */
+body { 
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    }
 
-header{
-    height: 100px;
-    background-color: white;
-    margin-bottom: 20px;
-}
+/* BOTTONI stile generico per entrambi   */
 
-.logo-image {
-  vertical-align: middle;
-  line-height: 100px;
-
-}
-
-.logo-text {
-    display: inline-block;
-    line-height: 100px;
-    vertical-align: middle;  
-    font-size: 3rem; 
-}
-
-/* main */
-
-main {
-    height: 700px;
-    width: 80% ;
-    background-color: white;
-    margin: 0 auto;
+.btn {
     border-radius: 5px;
-    padding-bottom: 20px;
-}
+    padding: .3rem .8rem;
+    font-size: .8rem; 
+    border: 0;
+    cursor: pointer;
+ }
 
-/* buttons */
+/* stile separato per i 2 bottoni con seconda classe personalizzata per ogni btn */
 
-.buttons{
-    border-bottom: 2px solid  #c3cdd2;
-    padding: 10px 50px;
-}
-
-
-
-.add-task{
-    background-color: rgb(41, 108, 232);
-    border-color: rgb(41, 108, 232);
+ .btn-filled {
+    background-color: #47ADF1;
     color: white;
-    padding:5px;
-    border-radius: 5px;
+    border: 1px solid #47ADF1;
 }
 
-.add-section{
+.btn-empty {
     background-color: white;
-    border-color: darkgrey;
-    color: lightgrey;
-    padding: 5px;
+    border: 1px solid gray;
+    color: gray;
+}
+
+
+/* HEADER */
+
+/* parametri generici header */
+.header {
+    background-color: white;
+    
+/* padding 20px dx e sx 0 top e bottom */
+    padding: 0 20px; 
+/* altezza header 80px */
+    height: 80px;
+/* altezza linea 80px per centrare */
+    line-height: 80px;
+}
+
+/* allineamento centrale header logo */
+.header-logo {
+    vertical-align: middle;
+}
+/* allineamento centrale header titolo e inline block per metterlo a fianco */
+.header-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* MAIN */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
     border-radius: 5px;
 }
 
-
-.title::before{
-    content: '\25BE';
-    margin-right: 10px;
-    width: 15px;
-    height: 5px;
+/* ACTIONS un po di padding ed il bordo sotto lightgray come il body*/
+.actions {
+    padding: .8rem 1.4rem;
+    border-bottom: 4px solid lightgray;
 }
 
-/* sezione tasks */
 
-.task{
-    padding: 30px 40px;
-    color: rgb(42, 42, 42);
-    }
+/* Tasks */
+.tasks {
+    padding: 1.2rem 1.4rem;
+}
 
- .list{
-        font-size: 16px;
-        margin-bottom: 35px;
-        list-style-type: none;
-    }
+.tasks ul {
+    list-style-type: none;    
+}
 
-    .check::before{
-        display: inline-block;
-        content: '\2713';
-        color: green;
-        width: 20px;
-        height: 20px;
-        padding: 2px;
-        border:1px solid rgb(25, 182, 25);
-    
-        border-radius: 50%;
-        margin-right:10px;
-        text-align: center;
-    }
+.main-list > li {
+    margin-bottom: .8rem;
+}
+
+.arrow {
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+.secondary-list > li {
+    line-height: 2.4rem;
+}
 
 
-    .cross::before{
-        display: inline-block;
-        content: '\2717';
-        color: red;
-        width: 20px;
-        height: 20px;
-        padding: 2px;
-        border: 1px solid red;
-        border-radius: 50%;
-        margin-right:10px;
-        text-align: center;
-    }
+/* Stile in comune per il tag &check e &cross */
+.circle {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
 
-  
-    .tag{
-        border-radius: 12px;
-        color: white;
-        font-size: 12px;
-        padding: 7px 10px;
-        margin: 5px;
-    }
-    
-    .editorial{
-        background-color: #45ABEA;
-   }
-   
-   .goals{
-       background-color: #9C72E4;
-   }
-   
-   .recruiting{
-       background-color:#65C1AA;
-   }
-   .mobile{
-       background-color: #F29E33;
-   }
-   .website{
-       background-color:#de5fa3;
-   }
-   .sales{
-       background-color: #B0C926;
-   }
-   
+/* Stile checked */
+.checked {
+    border-color: green;
+    color: green;
+}
+
+/* stile cross */
+.cross {
+    border-color: red;
+    color: red;
+}
+
+/* stile in comune per tutti gli span classe tag */
+.tag {
+   background-color: grey;
+   padding: .5rem 1rem;
+   margin-left: 1rem; 
+   border-radius: 20px;
+   color: white;
+}
+
+/* colore personalizzato per le seconde classi di tutti gli span */
+
+.editorial {
+    background-color: #47ADF1;
+}
+
+.recruiting {
+    background-color: rgb(26, 191, 81);
+}
 
 
+.q1goals {
+    background-color: rgb(115, 26, 170);
+}
+
+.mobile{
+    background-color: rgb(195, 115, 18);
+}
 
 
-    
+.website{
+    background-color: rgb(171, 41, 165);
+}
 
-
-  
-
-
-
+.sales{
+    background-color: rgb(33, 171, 91);
+}
 
 
 

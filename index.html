@@ -7,68 +7,110 @@
     <title>toboolist</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
 
     <!-- sezione header -->
-    <header>
-        <img class="logo-image" src="img/Logo.png" alt="logo booleaner">
-        <h2 class="logo-text">Toboolist</h2>
+    <header class="header">
+        <img class="header-logo" src="img/Logo.png" alt="logo booleaner">
+        <h2 class="header-title">Toboolist</h2>
     </header>       
     <!-- /sezione header -->
 
     <!-- sezione main -->
     <main>
-        <!-- sezione buttons -->
-        <div class="buttons">
-            <button class="add-task">Add Task</button>
-            <button class="add-section">Add section</button>
-        </div>
-        <!-- /sezione buttons -->
+        <div class="container">   
+            <!-- main nav -->
+            <nav class="actions">
+                <button class="btn btn-filled">Add Task</button>
+                <button class="btn btn-empty">Add section</button>
+            </nav>
+            <!-- /main nav -->
 
-        <!-- sezione tasks -->
-        <div class="tasks">
-            <!-- sezione new tasks -->
-            <section>
-                <h2 class="title">New Task</h2>
-                    <ul class="subtitle">
-                        <li class="list check ">Quartely newsletter<span class="tag editorial">Editorial</span></li>
-                    </ul>
-            </section>
-            <!-- /sezione new tasks -->
+            <!-- sezione tasks -->
+            <div class="tasks">
+                <ul class="main-list">
 
-            <!-- sezione today -->
-            <section>
-                <h2 class="title">Today</h2>
-                    <ul class="subtitle">
-                        <li class="list check">Recruiting blog post<span class="tag editorial">Editorial</span></li>
-                        <li class="list check">Mobile app launch<span class="tag goals">Q1 Goals</span></li>
-                        <li class="list cross">Interview John H.<span class="tag recruiting">Recruiting</span></li>
-                        <li class="list check">Summit update to monile storefronts<span class="tag mobile">Mobile</span></li>
-                    </ul>
-            </section>
-            <!-- /sezione today -->
+                    <!-- liste con intestazione span con simbolo arrow e h3 
+                    e sottoliste con span circle cross o checked contenuto
+                    e span finale con classe tag e classe che identifica sia il contenuto che il colore -->
 
-            <!-- sezione Upcoming -->
-            <section>
-                <h2 class="title">Upcoming</h2>
-                    <ul class="subtitle">
-                        <li class="list cross">Schedule meeting with Alex</li>
-                        <li class="list check">Homepage refresh<span class="tag website">Website</span></li>
-                        <li class="list check">Onboard new Sales team members<span  class="tag sales">Sales</span></li>
-                        <li class="list check">Review editorial calendar<span class="tag editorial">Editorial</span></li>
-                    </ul>
-            </section>
-            <!-- /sezione Upcoming -->
+                    <!-- PRIMA LISTA  -->
+                    <li>
+                        <h3><span class="arrow">&#9660;</span>New task</h3>
+                        <ul class="secondary-list">
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Quarterly newsletter
+                                <span class="tag editorial">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
 
-        </div>
-        <!-- /sezione tasks -->
+                    <!-- SECONDA LISTA -->
 
+                    <li>
+                        <h3><span class="arrow">&#9660;</span>Today</h3>
+                        <ul class="secondary-list">
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Recruiting blog post
+                                <span class="tag editorial">Editorial</span>
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Mobile app launch
+                                <span class="tag q1goals">Q1 Goals</span>
+                            </li>
+                            <li>
+                                <span class="circle cross">&cross;</span>
+                                Interwiew John H.
+                                <span class="tag recruiting">Recruiting</span>
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Summit update to mobile storefronts
+                                <span class="tag mobile">Mobile</span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <!-- TERZA LISTA -->
+
+
+                    <li>
+                        <h3><span class="arrow">&#9660;</span>Upcoming</h3>
+                        <ul class="secondary-list">
+                            <li>
+                                <span class="circle cross">&cross;</span>
+                                Schedule meeting with Alex
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Homepage refresh
+                                <span class="tag website">Website</span>
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Onboard new sales team members
+                                <span class="tag sales">Sales</span>
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Rewiew editorial calendar
+                                <span class="tag editorial">Editorial</span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+            </ul>
+            </div>
+            <!-- /Tasks -->
+
+            
+        </div> 
     </main>
     <!-- /sezione main -->
 
